@@ -16,8 +16,6 @@ Please note that the days and months don't work properly yet.
 
 **Features:**
 
-- Error handling for invalid dates.
 - Option to choose between displaying age in years only or detailed breakdown.
-- Responsive design with simple text output.
 
 This code provides a functional Age Calculator that is easy to understand and execute.
