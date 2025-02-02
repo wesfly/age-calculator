@@ -12,7 +12,11 @@ def calculate_age(birth_date_str):
         days = (delta.days % 30)
         return years, months, days
     except ValueError as e:
-        print(f"Error: {e}")
+        error = str(e).split()
+        if "'%Y-%m-%d'" in error:
+            print("Enter a valid date.")
+        else:
+            print(f"Error: {e}")
         return None, None, None
 
 def main():
@@ -22,7 +26,7 @@ def main():
 
         print(f"Years: {years}, Months: {months}, Days: {days}")
     except ValueError as e:
-        print("Please enter a valid date. All numbers, YYYY-MM-DD format.")
+        print("Enter a valid date. All numbers, YYYY-MM-DD format.")
 
 if __name__ == "__main__":
     main()
