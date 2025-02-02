@@ -23,8 +23,8 @@ def main():
     birth_date_input = input("Enter your birthdate in YYYY-MM-DD format: ")
     try:
         years, months, days = calculate_age(birth_date_input)
-
-        print(f"Years: {years}, Months: {months}, Days: {days}")
+        if years and months and days != None:
+            print(f"Years: {years}, Months: {months}, Days: {days}")
     except ValueError as e:
         print("Enter a valid date. All numbers, YYYY-MM-DD format.")
 
