@@ -17,14 +17,15 @@ def calculate_age(birth_date_str):
             print("Enter a valid date.")
         else:
             print(f"Error: {e}")
+        quit()
         return None, None, None
 
 def main():
     birth_date_input = input("Enter your birthdate in YYYY-MM-DD format: ")
     try:
         years, months, days = calculate_age(birth_date_input)
-        if years and months and days != None:
-            print(f"Years: {int(years)}, Months: {int(months)}, Days: {int(days)}")
+        
+        print(f"Years: {int(years)}, Months: {int(months)}, Days: {int(days)}")
     except ValueError as e:
         print("Enter a valid date. All numbers, YYYY-MM-DD format.")
 
