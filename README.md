@@ -1,10 +1,9 @@
 # Age Calculator
 
 This program calculates the age of a date.
-Please note that the days and months don't work properly yet.
+**Please note that the days and months don't work properly yet.**
 
-**How to Use:**
-
+## How to use
 
 1. **Run the Script**: Save the code in a file named `age_calculator.py` and execute it using Python:
    ```bash
