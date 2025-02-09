@@ -18,12 +18,14 @@ months = {
 date_string = input("Put your date string here: ")
 start_date = datetime.datetime.strptime(date_string, "%Y-%m-%d").date()
 print(date_string, start_date)
+
+today = datetime.datetime.strptime.today().date()
+
 delta = today - start_date
-today = datetime.datetime.today().date()
 if delta.days < 0:
     raise ValueError("Invalid date. Please enter a valid date.")
 
-for i in range(1, today - start_date):
+for i in range(1, today - delta.days):
     print("adf")
 
 # def calculate_age(birth_date_str):
